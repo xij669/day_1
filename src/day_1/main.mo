@@ -1,4 +1,5 @@
 import Debug "mo:base/Debug";
+import Nat "mo:base/Nat";
 
 actor {
     let name : Text = "Motoko";
@@ -52,5 +53,8 @@ actor {
         for (value in array2.vals()){
             Debug.print(debug_show(value))
         };
+    };
+    public func nat_to_text(n : Nat) : async Text {
+        return(Nat.toText(n));
     };
 };
