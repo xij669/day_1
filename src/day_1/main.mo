@@ -16,7 +16,7 @@ actor {
     public func equal_to_one (n : Nat) : async Text {
         if(n == 1) {
             return("n is equal to 1 !");
-        } else {
+        }else {
             return ("n is not equal to 1 !");
         };
     };
@@ -26,9 +26,9 @@ actor {
         };
         if( n > 1 and n < 3){
             return("n is above 1 and below 3!");
-        } else if( n == 3){
+        }else if( n == 3){
             return("n is equal to 3!");
-        } else if( n > 3 ){
+        }else if( n > 3 ){
             return("n is above 3!");
         }else {
             return("n is equal to 1!");
